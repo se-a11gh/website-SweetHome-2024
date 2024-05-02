@@ -1,0 +1,273 @@
+
+.wrapp_Block4{
+    margin: 50px auto 50px auto;
+    max-width: 1200px;
+    height: auto;
+}
+.Block1-feedBack__modif2{
+    flex-wrap: wrap;
+}
+.block_servise{
+    box-shadow: 0px 1px 10px #c6ceff;
+    border-radius: 5px;
+    padding:10px;
+    box-sizing: border-box;
+    cursor: default;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.servs_1{
+    display: flex;
+    width: 62%;
+    height: 325px;
+}.servs_1 img{
+    width: 150px;
+    height: 150px;
+    border-radius: 3px;
+}
+.servs_1 div p:first-child {
+    padding: 3px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: bold;
+}
+.servs_1__contacts{
+    margin-top: 30px;
+}.servs_1__contacts p{
+    color: rgb(0, 136, 255);
+}
+.servs_2{
+    width: 37%;
+    height: 325px;
+}.servs_2 p{
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: sans-serif; 
+    font-weight: bold;
+}
+.servs_2 ul li a{
+    color: #3D8FEF;
+    font-weight: bold;
+    line-height: 27px; 
+    padding: 20px;
+    box-sizing: border-box;
+}
+.servs_3{
+    display: flex;
+    align-items: center;
+    width: 53.5%;
+    height: 240px;
+}
+.servs_3__foto, .servs_4__foto{
+    width: 165px;
+}
+.servs_3__foto img, .servs_4__foto img{
+    width: 100%;
+}
+.servs_3__info{
+    width: 70%;
+}.servs_3__info p{
+   padding: 5px;
+   box-sizing: border-box;
+}
+.servs_3__info div{
+    margin: 10px 0 10px 0;
+}
+.servs_4{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 45.5%;
+    height: 240px;
+}
+.servs_4__info div{
+    display: flex;
+    align-items: center;
+    margin: 10px 0 10px 0;
+}.servs_4__info div img{
+    width: 27px;
+}.servs_4__info div p{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.servs_4 ul li::before{
+    position: absolute;
+    content: "✔";
+    display: block;
+    font-size: 16px;
+    margin-left: -16px;
+    color: rgb(65, 205, 65);
+}.servs_4 ul {
+    margin-left: 30px;
+}.servs_4 ul li{
+    line-height: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+/*(Адаптация)*/
+@media(max-width:1150px){
+.servs_4{
+    font-size: 15px;
+}
+.btn_goteleg {
+    width: 217px;
+}
+}
+
+@media (max-width:950px) {
+.servs_1 div p, .servs_2, .servs_3__info{
+    font-size: 15px;
+}
+.servs_2 ul li a {
+    padding: 10px;
+}
+.servs_1 img {
+    width: 125px;
+    height: 125px;
+}
+.servs_3__foto, .servs_4__foto {
+    width: 130px;
+}
+}
+
+@media(max-width:850px){
+.wrapp_Block4 {
+    margin: 50px auto 15px auto;
+}
+.servs_1 {
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+}.servs_1 img {
+    width: 165px;
+    height: 165px;
+}
+.servs_3 {
+    width: 100%;
+}
+.servs_3__foto {
+    width: 180px;
+}.servs_3__info {
+    width: 75%;
+}
+.servs_4__info{
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+.servs_2 ul li a {
+    line-height: 25px;
+    padding: 8px;
+}
+.servs_2 {
+    width: 43%;
+    height: 300px;
+}
+.servs_4 {
+    justify-content: space-around;
+    width: 55%;
+    height: 300px;
+}
+.servs_4__foto {
+    width: 180px;
+}
+}
+
+@media(max-width:750px){
+.servs_2, .servs_3, .servs_4 {
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+}
+.servs_1 img {
+    width: 140px;
+    height: 125px;
+}
+.servs_2 p {
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.servs_2 ul {
+    text-align: center;
+}
+}
+
+@media(max-width:500px){
+.btn_goteleg {
+    width: 200px;
+}.btn_goteleg a {
+    padding: 9px;
+}
+.servs_4, .servs_3 {
+    position: relative;
+}
+.servs_4__info, .servs_3__info {
+    left: 0;
+    padding: 35px;
+    box-sizing: border-box;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background: rgba(49, 35, 42, 0.65);
+    backdrop-filter: blur(5px);
+    color: white;
+}
+.servs_4__info div img {
+    width: 24px;
+}
+.servs_4 ul li {
+    line-height: 27px;
+}.servs_4 ul li::before {
+    font-size: 15px;
+    margin-left: -20px;
+}
+.servs_3__info {
+    width: 100%;
+}
+.servs_3 {
+    flex-direction: column;
+}
+}
+
+@media(max-width:400px){
+.servs_4__info, .servs_3__info {
+    padding: 20px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

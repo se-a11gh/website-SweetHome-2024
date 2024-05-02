@@ -1,0 +1,260 @@
+.footer_home{
+    width: 100%;
+    height: auto;
+    background-color: #15204B;
+    color: white;
+}
+.f_upPanel{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: 300px;
+    padding: 15px;
+    box-sizing: border-box;
+}
+.f_downPanel{
+    display: flex;
+    justify-content:center;
+    width: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color: rgb(33, 33, 33);
+}
+.f_downPanel_img {
+    display: flex;
+    align-items: center;
+}.f_downPanel_img img{
+    margin-left: 15px;
+}
+.size1{
+    width: 30px;
+}
+.size2{
+    width: 40px;
+}
+.f_downPanel_p{
+    font-size: 14px;
+    margin-left: 15px;
+}
+.foter_up_block__1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+.bl_listHome p {
+    cursor: pointer;
+    font-weight: bold;
+    border-bottom: 3px solid #3D8FEF;
+} 
+.foter_up_block__1 img{
+    display: none;
+    width: 13px;
+    transform: rotate(-90deg);
+    transition: all 1s;
+ }
+.listHome li{
+    line-height: 26px;
+    font-weight: normal;
+    font-size: 15px;
+    cursor: pointer;
+}.listHome li:hover{
+    font-weight: bold;
+}
+.link_menu{
+    color: white;
+}
+.link_addtl{
+    color: #3D8FEF;
+}
+.listDop1 li:first-child::before{
+    content: "⇄";
+    font-size: 15px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+.listDop1 li:last-child::before{
+    content: "⇾";
+    font-size: 15px;
+    padding: 3px;
+    box-sizing: border-box;
+}
+.groupSoc{
+    width: 145px;
+}
+.SocIcon{
+    margin-top: 10px;
+}.SocIcon p{
+    width: 100%;
+}
+.aside_socLink{
+    display: flex;
+    margin-top: 5px;
+}
+.socLink_svg{
+    width: 20px;
+    height: 20px;
+    fill: white;
+    transition: all 0.8s;
+    cursor: pointer;
+    margin: 4px;
+}
+.socLink_svg_aside{
+    fill: rgb(80, 80, 80);
+}
+.socLink_svg:hover{ 
+    fill: #F74068;
+    transition: all 0.8s;
+}
+.bl_aboutUs{
+    width: 150px;
+    height: 73px;
+}
+
+
+
+
+
+
+
+
+/*(Адаптация Футер)*/
+@media (max-width:950px) {
+.f_upPanel {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 375px;
+}
+.groupSoc{
+    width: 50%;
+}
+.foter_up_block{
+    height: 200px;
+}
+.bl_aboutUs{
+    margin: 15px;
+}
+}
+
+@media(max-width:700px){
+.groupSoc {
+    width: 175px;
+}
+}
+
+@media(max-width:650px){
+.link_menu {
+    color: rgb(19, 19, 19);
+}
+.foter_up_list {
+    overflow: hidden;
+    height: 0px;
+    border:1px solid rgb(206, 206, 206);
+    transition: all 1s;
+}
+.foter_up_block__1 img{
+    display: block;
+}
+.foter_up {
+    justify-content: flex-start;
+    flex-direction: column;
+    height: auto;
+}
+.foter_up > div {
+    margin: 0;
+}
+.foter_up_list li{
+    background-color: white;
+    padding: 5px 10px 5px 10px;
+    box-sizing: border-box;
+    color: rgb(28, 28, 28);
+} 
+.f_upPanel {
+    height: auto;
+}
+.foter_up_block {
+    width: 100%;
+    height: auto;
+    padding: 0;
+}
+.bl_listHome {
+    width: 100%;
+}.bl_listHome p {
+    border: none;
+    padding: 10px 0 10px 0;
+    box-sizing: border-box;
+}
+.foter_up_block__2 p {
+    border-bottom:1px solid rgb(206, 206, 206);
+    padding: 10px 0 10px 0;
+    box-sizing: border-box;
+}
+.listHomeDop{
+    padding: 10px;
+    box-sizing: border-box;
+}
+}
+
+@media(max-width:600px){
+.groupSoc {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 15px 0 15px 0;
+}
+.SocIcon p {
+    font-size: 14px;
+}
+.bl_aboutUs {
+    width: 100%;
+    height: 60px;
+    align-self: center;
+    margin: 10px;
+}
+}
+
+@media(max-width:460px){
+.SocIcon {
+    width: 155px;
+}
+}
+    
+
+
+
+
+
+
+/* (ОБЩЕЕ) */
+@media (max-width:950px) {    
+.bl_h2 {
+    width: 285px;
+    padding: 8px;
+    font-size: 21px;
+}
+}
+
+@media(max-width:800px){
+.Block1-feedBack {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.Block1-feedBack__modif1 > div:first-child, .Block1-feedBack__modif1 > div:last-child {
+    opacity: 1;
+}
+.bl_h2 {
+    width: 100%;
+}
+}
+
+@media(max-width:600px){
+.socLink_svg {
+    width: 18px;
+    height: 18px;
+}
+.bl_h2 h2 {
+    font-size: 20px;
+}
+}
